@@ -49,7 +49,7 @@ params.func_prune_unused_atoms = @default_prune_max_coherent_atoms;
 
 % parameters for pruning unused atoms 
 M = d*log(d);
-params.THRESHOLD_REMOVE_UNUSED_ATOMS = 0.001; %%% error if removed
+params.THRESHOLD_REMOVE_UNUSED_ATOMS = 1/M; %%% error if removed
 params.TAU = 2*log(2*params.N/M);         %%% error if removed
 params.func_atoms_scores = @atom_scores_count;
 params.func_prune_unused_atoms = @default_prune_unused_atoms;
