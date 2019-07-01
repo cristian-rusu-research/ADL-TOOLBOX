@@ -1,0 +1,4 @@
+function [val] = frobenius_norm(in)
+val = 
+end
+
